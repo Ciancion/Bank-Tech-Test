@@ -2,14 +2,16 @@
 The goal of this tech test is to practice OO design and TDD skills.
 This project is written in JavaScript
 
-###Specifications
-###Requirements
--Be able to interact with code via the JavaScript console.
--Deposits, withdrawal.
--Account statement (date, amount, balance) printing.
--Data can be kept in memory (it doesn't need to be stored to a database or anything).
+### Specifications
 
-###User Story
+### Requirements
+
+- Be able to interact with code via the JavaScript console.
+- Deposits, withdrawal.
+- Account statement (date, amount, balance) printing.
+- Data can be kept in memory (it doesn't need to be stored to a database or anything).
+
+### User Story
 ```sh
 As a User,
 so I can manage my money,
