@@ -29,8 +29,4 @@ describe("Bank", function(){
     expect(bank.balance).toEqual(5);
   });
 
-
-
-
-
 });
