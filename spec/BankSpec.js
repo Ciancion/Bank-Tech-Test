@@ -22,6 +22,14 @@ describe("Bank", function(){
     expect(bank.balance).toEqual(2);
   });
 
+  it("Should not allow to take money", function(){
+    bank.deposit(10);
+    expect(function() {
+    bank.withdrawal(50)})
+    .toThrowError('Your balance is not enough to process the withdrawal')
+  });
+
+
   it("Should allow to take money", function(){
     bank.deposit(10);
     bank.withdrawal(5);

@@ -13,12 +13,16 @@ Bank.prototype.createTransaction = function(){
 
 Bank.prototype.deposit = function(money){
   this.createTransaction();
-  this.currentTransaction.credit = money;
+  this.currentTransaction.isCredit()
+  this.currentTransaction.updateStatement(money)
   this.balance += money
 };
 
 Bank.prototype.withdrawal = function(money){
-  this.createTransaction();
-  this.currentTransaction.debit = money;
-  this.balance -= money
+  if(this.balance < money){throw new Error('Your balance is not enough to process the withdrawal')
+  } else {this.createTransaction();
+    this.currentTransaction.isDebit()
+    this.currentTransaction.updateStatement(money)
+    this.balance -= money
+  }
 };
